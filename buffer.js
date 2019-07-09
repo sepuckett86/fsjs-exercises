@@ -1,5 +1,5 @@
-const myBuff = new Buffer.alloc(10);
-myBuff.write('hi');
-console.log(myBuff);
+function makeBuff(str) {
+  return Buffer.from(str);
+}
 
-module.exports = myBuff;
+module.exports = makeBuff;

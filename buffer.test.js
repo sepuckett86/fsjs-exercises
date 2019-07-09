@@ -1,7 +1,11 @@
-const myBuff = require('./buffer');
+const makeBuff = require('./buffer');
 
 describe('myBuff', () => {
-  it('creates a buffer of length 10', () => {
-    expect(myBuff).toHaveLength(10);
+  const buffer = makeBuff('string');
+  it('creates a buffer of length 6', () => {
+    expect(buffer).toHaveLength(6);
+  });
+  it('can get string back', () => {
+    expect(buffer.toString()).toBe('string');
   });
 });
