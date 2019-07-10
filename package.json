@@ -4,10 +4,10 @@
   "description": "This is where I will track progress for ALL exercises for the full-stack javascript Alchemy class.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:watch": "nodemon index.js",
     "test": "jest",
-    "test:watch": "jest --watch --verbose --runInBand"
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   "homepage": "https://github.com/sepuckett86/fsjs-exercises#readme",
   "devDependencies": {
     "eslint": "^6.0.1",
+    "express": "^4.17.1",
     "jest": "^24.8.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }
